@@ -1,69 +1,62 @@
 🌤️ WeatherCast
 
-WeatherCast is a modern web weather application that lets users check real-time weather conditions and a 5-day forecast for any city. Built with Laravel, Blade, and jQuery, it provides an interactive, dynamic, and responsive UI.
+Real-time weather updates and 5-day forecast at your fingertips.
 
-🔹 Key Features
+Requirements
 
-City Weather Search: Type any city and get live weather updates instantly.
+PHP 8.2 or higher
 
-Current Weather Display: Shows temperature, weather condition, and icon.
+Composer
 
-Date & Time Display: Readable format (Day, DD MMM YYYY).
+Node.js & NPM (optional for asset compilation)
 
-Detailed Weather Info: Wind speed, humidity, pressure, visibility.
+Quick Start
+1. Clone the repository
+git clone https://github.com/yourusername/weathercast.git
+cd weathercast
 
-Dynamic Background: Background changes based on weather (Sunny, Rainy, Cloudy, Snowy).
-
-5-Day Forecast: Expandable section showing the next 5 days.
-
-Responsive & Interactive UI: Works seamlessly on desktop and mobile.
-
-AJAX-Based Updates: No page refresh needed.
-
-Error Handling: Alerts when the city is not found.
-
-💻 Technology Stack
-
-Backend: Laravel 10
-
-Frontend: Blade, jQuery
-
-API: OpenWeather API
-
-Styling: CSS3, Font Awesome
-
-🚀 Installation & Usage
-
-Clone the repository: git clone https://github.com/yourusername/weathercast.git
-
-Enter Proejct: cd weathercast
-
-Install dependencies:
-
+2. Install dependencies
 composer install
-
 npm install
 
-npm run dev
-
-Set up .env file:
-
+3. Environment setup
 cp .env.example .env
-
 php artisan key:generate
 
-Add your OpenWeather API key:
-
+4. Configure your OpenWeather API key in .env
 OPENWEATHER_KEY=your_api_key_here
 
-Run the server: php artisan serve
+5. Run migrations (optional, if storing user searches)
+php artisan migrate
 
-Access in Browser: http://127.0.0.1:8000
+6. Build assets
+npm run dev
 
-🌟 How Others Can Use It
+7. Start the development server
+php artisan serve
 
-Clone the repo and run locally with PHP, Laravel, and Node.js installed.
+8. Open in Browser
 
-Get your free OpenWeather API key to fetch live data.
+http://127.0.0.1:8000
 
-No database setup is needed unless extended for user history.
+About
+
+WeatherCast is a dynamic weather application built with Laravel, Blade, and jQuery. It allows users to:
+
+Search for any city and get live weather updates.
+
+View current weather, temperature, humidity, wind speed, and visibility.
+
+See a 5-day forecast in an expandable section.
+
+Enjoy dynamic backgrounds and weather icons based on conditions.
+
+Resources
+
+Readme
+
+OpenWeather API
+
+Contributors
+
+@sm-shahariar – SM Shahariar Rahman
